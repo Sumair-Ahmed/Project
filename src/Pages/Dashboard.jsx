@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Counter from "../Components/counter.jsx";
+import Counter from "../Components/Counter.jsx";
 import RichTextEditor from "../Components/RichTextEditor.jsx";
 import UserData from "../Components/UserData.jsx";
 import UserForm from "../Components/UserForm.jsx";
