@@ -22,11 +22,18 @@ const Login = () => {
   };
 
   const handleLogin = () => {
-    const storedUser = JSON.parse(localStorage.getItem("user"));
+    // const storedUser = JSON.parse(localStorage.getItem("user"));
 
-    localStorage.setItem("user", JSON.stringify(formData));
-    dispatch(login(storedUser));
-    navigate("/dashboard");
+    if (
+      formData.username.toLowerCase() === "admin" &&
+      formData.password === "12345"
+    ) {
+      // localStorage.setItem("user", JSON.stringify(formData));
+      dispatch(login(formData));
+      navigate("/dashboard");
+    } else {
+      alert("Invalid username or password!");
+    }
 
     // if (!storedUser) {
     //   localStorage.setItem("user", JSON.stringify(formData));
