@@ -62,7 +62,9 @@ const DataView = ({ setFormToEdit }) => {
           </Card>
         ))
       ) : (
-        <p className="text-gray-500">No users saved.</p>
+        <h2 className="text-gray-500 text-center m-4 text-lg font-bold">
+          No Data
+        </h2>
       )}
     </animated.div>
   );
