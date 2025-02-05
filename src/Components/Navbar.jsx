@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { logout } from "../stores/authSlice";
+import { logout } from "../stores/authSlice.js";
 const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();

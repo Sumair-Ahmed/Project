@@ -3,7 +3,7 @@ import { Card, Button } from "@mui/material";
 import { Edit, Delete } from "@mui/icons-material";
 import { useSpring, animated } from "react-spring";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteForm } from "../stores/formsSlice";
+import { deleteForm } from "../stores/formsSlice.js";
 
 const DataView = ({ setFormToEdit }) => {
   const dispatch = useDispatch();

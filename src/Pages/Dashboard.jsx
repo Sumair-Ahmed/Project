@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Counter from "../Components/counter";
-import RichTextEditor from "../Components/RichTextEditor";
-import UserData from "../Components/UserData";
-import UserForm from "../Components/UserForm";
-import DataView from "../Components/DataView";
+import Counter from "../Components/counter.jsx";
+import RichTextEditor from "../Components/RichTextEditor.jsx";
+import UserData from "../Components/UserData.jsx";
+import UserForm from "../Components/UserForm.jsx";
+import DataView from "../Components/DataView.jsx";
 const Dashboard = () => {
   const [formToEdit, setFormToEdit] = useState(null);
   const [jsondata, setJsonData] = useState([]);

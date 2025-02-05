@@ -3,7 +3,7 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 import { Card, Button } from "@mui/material";
 import { useSpring, animated } from "react-spring";
 import { useDispatch, useSelector } from "react-redux";
-import { increment, decrement, reset } from "../stores/counterSlice";
+import { increment, decrement, reset } from "../stores/counterSlice.js";
 const Counter = () => {
   const dispatch = useDispatch();
   const counterValue = useSelector((state) => state.counter.value);

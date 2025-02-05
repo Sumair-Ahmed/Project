@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { useDispatch, useSelector } from "react-redux";
-import { setRichText } from "../stores/richTextSlice";
+import { setRichText } from "../stores/richTextSlice.js";
 
 const RichTextEditor = () => {
   const dispatch = useDispatch();
